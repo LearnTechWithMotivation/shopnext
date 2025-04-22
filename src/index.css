@@ -1,0 +1,31 @@
+@import "tailwindcss";
+@tailwind utilities;
+
+
+.cust-btn{
+    @apply bg-cyan-500 shadow-lg font-mono shadow-cyan-500/50 ring-1 text-[10px] sm:text-xs md:text-xl sm:px-10 px-5 sm:py-2 py-1 whitespace-nowrap rounded-md hover:scale-105 transition-transform hover:font-bold hover:text-white hover:shadow-gray-500/50 cursor-pointer;
+}
+
+@theme{
+    --color-shopnestblue : #007B93;
+    --color-shopnestorange : #FF7321;
+}
+
+.text-stroke {
+  -webkit-text-stroke: 2px #CEFAFE;
+}
+
+@theme{
+  --animate-jump : jump 2s ease-in-out infinite;
+
+  @keyframes jump {
+    0%,100%{
+      transform : translateY(0%);
+
+    }
+    50%{
+      transform : translateY(-1%);
+      box-shadow:0 0 #0000;
+    }
+  }
+}
