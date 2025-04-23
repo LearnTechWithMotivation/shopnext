@@ -24,9 +24,9 @@ const Cart = () => {
 
       <section className=" flex flex-col justify-center items-center mt-5 gap-3">
         {cartItems.map((item) => (
-          <div className="h-50 bg-gray-50 border-2 w-9/10 md:w-1/2 rounded-xl flex items-center gap-3 ">
+          <div className="h-50 md:h-75 bg-gray-50 border-2 w-9/10 md:w-4/5 rounded-xl flex items-center gap-3 ">
             <div className="w-1/3 h-full border-r-2 flex justify-center items-center">
-              <img className="w-3/5" src={item.image} alt={item.name} />
+              <img className="p-2 h-9/10 object-contain" src={item.image} alt={item.name} />
             </div>
             <div className="w-1/2 text-xs md:text-xl h-full flex flex-col justify-evenly items-center ">
               <h1 className="font-mono text-center font-semibold">
@@ -45,7 +45,7 @@ const Cart = () => {
               </button>
             </div>
 
-            <div className="bg-cyan-100 text-xs sm:text-2xl text-green-500 font-mono w-1/4 h-full ml-auto flex justify-center  items-center border-l-2 border-black">
+            <div className="bg-cyan-100 text-xs md:text-xl text-green-500 font-mono w-1/4 h-full ml-auto flex justify-center  items-center border-l-2 border-black">
               ${(item.price * item.quantity).toFixed(2)}
             </div>
           </div>
