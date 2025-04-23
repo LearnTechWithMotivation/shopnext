@@ -45,7 +45,7 @@ const Cart = () => {
               </button>
             </div>
 
-            <div className="bg-cyan-100 text-xs md:text-xl text-green-500 font-mono w-1/4 h-full ml-auto flex justify-center  items-center border-l-2 border-black">
+            <div className="bg-cyan-100 text-xs overflow-ellipsis text-green-500 font-mono w-1/4 h-full ml-auto flex justify-center  items-center border-l-2 border-black">
               ${(item.price * item.quantity).toFixed(2)}
             </div>
           </div>
