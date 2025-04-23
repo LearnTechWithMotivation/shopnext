@@ -9,7 +9,7 @@ import PaymentPage from "./components/PaymentPage";
 
 const App = () => {
   return (
-    <BrowserRouter basename="/shopnext/"
+    <BrowserRouter basename={import.meta.env.BASE_URL}
     >
       <Navbar>
       </Navbar>
